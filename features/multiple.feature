@@ -9,7 +9,7 @@ Feature: Multiplication
     And I fill in '2' for 'm_first'
     And I fill in '5' for 'm_second'
     And I click on 'Multiply'
-    Then I should get '10'
+    Then I should get '10.0'
 
   @mult
   Scenario: Multiply one number by zero
@@ -17,7 +17,7 @@ Feature: Multiplication
     And I fill in '2' for 'm_first'
     And I fill in nothing for 'm_second'
     And I click on 'Multiply'
-    Then I should get '0'
+    Then I should get '0.0'
 
   @mult
   Scenario: Multiply one number by a fraction.
@@ -25,4 +25,4 @@ Feature: Multiplication
     And I fill in '2' for 'm_first'
     And I fill in '2/1' for 'm_second'
     And I click on 'Multiply'
-    Then I should get '4' 
+    Then I should get '4.0' 

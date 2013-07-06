@@ -9,7 +9,7 @@ Feature: Division
     And I fill in '10' for 'd_first'
     And I fill in '2' for 'd_second'
     And I click on 'Divide'
-    Then I should find '5'
+    Then I should find '5.0'
 
   @div
   Scenario: Divide one number by zero

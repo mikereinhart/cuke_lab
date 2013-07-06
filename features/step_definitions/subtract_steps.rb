@@ -22,10 +22,10 @@ Given(/^I click on 'Subtract'$/) do
   browser.button(:id => 'subtract_button').click
 end
 
-Then(/^I should view '(\d+)'$/) do |answer|
+Then(/^I should view '(\d+\.\d+)'$/) do |answer|
   assert_equal(browser.div(:id => 'subtract_answer').text, answer)
 end
 
-Then(/^I should view '(\-\d+)'$/) do |answer|
+Then(/^I should view '(\-\d+\.\d+)'$/) do |answer|
   assert_equal(browser.div(:id => 'subtract_answer').text, answer)   # express the regexp above with the code you wish you had
 end

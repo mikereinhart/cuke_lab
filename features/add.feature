@@ -9,7 +9,7 @@ Feature: Addition
     And I fill in '50' for 'first'
     And I fill in '40' for 'second'
     And I click on 'Add' 
-    Then I should see '90'
+    Then I should see '90.0'
 
     @add
   Scenario: Add one numbers
@@ -17,7 +17,7 @@ Feature: Addition
     And I fill in '50' for 'first'
     And I fill in nothing for 'second'
     And I click on 'Add' 
-    Then I should see '50'
+    Then I should see '50.0'
 
     @add
   Scenario: Add no numbers
@@ -25,4 +25,4 @@ Feature: Addition
     And I fill in nothing for 'first'
     And I fill in nothing for 'second'
     And I click on 'Add' 
-    Then I should see '0'
+    Then I should see '0.0'

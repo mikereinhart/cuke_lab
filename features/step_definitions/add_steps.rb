@@ -27,7 +27,7 @@ Given(/^I click on 'Add'$/) do
   browser.button(:id => 'add_button').click
 end
 
-Then(/^I should see '(\d+)'$/) do |answer|
+Then(/^I should see '(\d+\.\d+)'$/) do |answer|
   assert_equal(browser.div(:id => 'answer').text, answer)
 end
 

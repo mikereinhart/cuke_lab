@@ -9,7 +9,7 @@ Feature: Subraction
     And I fill in '40' for 's_first'
     And I fill in '15' for 's_second'
     And I click on 'Subtract'
-    Then I should view '25'
+    Then I should view '25.0'
 
     @sub
   Scenario: Subtract one number
@@ -17,7 +17,7 @@ Feature: Subraction
     And I fill in '12' for 's_first'
     And I fill in nothing for 's_second'
     And I click on 'Subtract'
-    Then I should view '12'
+    Then I should view '12.0'
 
     @sub
   Scenario: Subtract a bigger number from a smaller one
@@ -25,4 +25,4 @@ Feature: Subraction
     And I fill in '5' for 's_first'
     And I fill in '8' for 's_second'
     And I click on 'Subtract'
-    Then I should view '-3'
+    Then I should view '-3.0'
