@@ -1,7 +1,7 @@
 Feature: Subraction
   In order to avoid mistakes
   As a math beginner
-  I want to see the sum of two numbers
+  I want to see the difference of two numbers
 
   @sub
   Scenario: Subtraction with two numbers

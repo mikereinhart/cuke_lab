@@ -5,6 +5,8 @@ RailsCukeLab::Application.routes.draw do
   match '/subtract' => 'calculator#subtract'
 
   match '/multiply' => 'calculator#multiply'
+
+  match '/divide' => 'calculator#divide'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

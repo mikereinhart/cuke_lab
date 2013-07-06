@@ -1,0 +1,10 @@
+<form method='post' action='/divide'>
+  <input type='text' id='d_first' name='d_first'/>
+  <input type='text' id='d_second' name='d_second'/>
+  <button type='submit' id='divide_button'>Divide</button>
+</form>
+
+<h5>Answer:</h5>
+<div id='d_answer'>
+  <%= @d_answer ? @d_answer : '' %>  
+</div>

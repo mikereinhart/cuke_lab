@@ -8,15 +8,25 @@ class CalculatorController < ApplicationController
 
   def subtract
     if params[:s_first] && params[:s_second]
-      @subtract_answer = params[:s_first].to_i - params[:s_second].to_i
+      @subtract_answer = params[:s_first].to_f - params[:s_second].to_f
       render :subtract
     end
   end
 
   def multiply
     if params[:m_first] && params[:m_second]
-      @m_answer = params[:m_first].to_i * params[:m_second].to_i
+      @m_answer = params[:m_first].to_f * params[:m_second].to_f
       render :multiply
+    end
+  end
+
+  def divide
+    if params[:d_second].to_i == 0
+      @d_answer = 'Error: you cannot divide by zero.'
+      render :divide
+    elsif params[:d_first] && params[:d_second]
+      @d_answer = params[:d_first].to_f / params[:d_second].to_f
+      render :divide
     end
   end
 end
