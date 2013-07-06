@@ -1,0 +1,10 @@
+<form method='post' action='/add'>
+  <input type='text' id='first' name='first'/>
+  <input type='text' id='second' name='second'/>
+  <button type='submit' id='add_button'>Add</button>
+</form>
+
+<h5>Answer:</h5>
+<div id='answer'>
+  <%= @answer ? @answer : '' %>  
+</div>
