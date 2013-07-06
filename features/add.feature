@@ -11,16 +11,16 @@ Feature: Addition
     And I click on 'Add' 
     Then I should see '90'
 
-  Scenario: Add two numbers
+  Scenario: Add one numbers
     Given I visit the calculator page for add
     And I fill in '50' for 'first'
-    And I fill in '40' for 'second'
+    And I fill in nothing for 'second'
     And I click on 'Add' 
-    Then I should see '90'
+    Then I should see '50'
 
-  Scenario: Add two numbers
+  Scenario: Add no numbers
     Given I visit the calculator page for add
-    And I fill in '50' for 'first'
-    And I fill in '40' for 'second'
+    And I fill in nothing for 'first'
+    And I fill in nothing for 'second'
     And I click on 'Add' 
-    Then I should see '90'
+    Then I should see '0'
