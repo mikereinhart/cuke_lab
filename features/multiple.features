@@ -1,0 +1,28 @@
+Feature: Multiplication
+  In order to avoid mistakes
+  As a math beginner
+  I want to see the product of two numbers
+
+  @mult
+  Scenario: Multiply two numbers
+    Given I visit the calculator page for multiply
+    And I fill in '2' for 'first'
+    And I fill in '5' for 'second'
+    And I click on 'Multiply'
+    Then I should see '10'
+
+  @mult
+  Scenario: Multiply one number by zero
+    Given I visit the calculator page for multiply
+    And I fill in '2' for 'first'
+    And I fill in nothing for 'second'
+    And I click on 'Multiply'
+    Then I should see '0'
+
+  @mult
+  Scenario: Multiply one number by a fraction.
+    Given I visit the calculator page for multiply
+    And I fill in '2' for 'first'
+    And I fill in '0.5' for 'second'
+    And I click on 'Multiply'
+    Then I should see 'Please... no fractions'

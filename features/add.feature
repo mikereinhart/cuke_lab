@@ -3,7 +3,7 @@ Feature: Addition
   As a math beginner
   I want to see the sum of two numbers
 
-
+  @add
   Scenario: Add two numbers
     Given I visit the calculator page for add
     And I fill in '50' for 'first'
@@ -11,6 +11,7 @@ Feature: Addition
     And I click on 'Add' 
     Then I should see '90'
 
+    @add
   Scenario: Add one numbers
     Given I visit the calculator page for add
     And I fill in '50' for 'first'
@@ -18,6 +19,7 @@ Feature: Addition
     And I click on 'Add' 
     Then I should see '50'
 
+    @add
   Scenario: Add no numbers
     Given I visit the calculator page for add
     And I fill in nothing for 'first'

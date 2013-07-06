@@ -44,5 +44,5 @@ end
 
 # browser = Watir::Browser.new
 # browser.goto "http://www.google.com"
-# browser.text_field(:name => 'q').set('reinhardt')
+# browser.text_field(:name => 'q').set('reinhart')
 # browser.button(name: 'btnG').click
