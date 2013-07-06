@@ -11,7 +11,7 @@ Feature: Division
     And I click on 'Divide'
     Then I should find '5.0'
 
-  @div
+  # @div
   Scenario: Divide one number by zero
     I visit the calculator page for divide
     And I fill in '4' for 'd_first'

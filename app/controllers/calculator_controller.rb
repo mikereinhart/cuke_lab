@@ -21,10 +21,10 @@ class CalculatorController < ApplicationController
   end
 
   def divide
-    if (params[:d_second] != 0) && (params[:d_first] && params[:d_second])
-      @d_answer = params[:d_first].to_f / params[:d_second].to_f
+    if (params[:d_second].to_i != 0) && (params[:d_first] && params[:d_second])
+      @d_answer = params[:d_first].to_i / params[:d_second].to_i
       render :divide
-    elsif params[:d_second].to_f = 0
+    elsif params[:d_second].to_i == 0
       @d_answer = 'Error: you cannot divide by zero.'
       render :divide
     end
