@@ -12,4 +12,11 @@ class CalculatorController < ApplicationController
       render :subtract
     end
   end
+
+  def multiply
+    if params[:m_first] && params[:m_second]
+      @m_answer = params[:m_first].to_i * params[:m_second].to_i
+      render :multiply
+    end
+  end
 end

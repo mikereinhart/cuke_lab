@@ -6,23 +6,23 @@ Feature: Multiplication
   @mult
   Scenario: Multiply two numbers
     Given I visit the calculator page for multiply
-    And I fill in '2' for 'first'
-    And I fill in '5' for 'second'
+    And I fill in '2' for 'm_first'
+    And I fill in '5' for 'm_second'
     And I click on 'Multiply'
-    Then I should see '10'
+    Then I should get '10'
 
   @mult
   Scenario: Multiply one number by zero
     Given I visit the calculator page for multiply
-    And I fill in '2' for 'first'
-    And I fill in nothing for 'second'
+    And I fill in '2' for 'm_first'
+    And I fill in nothing for 'm_second'
     And I click on 'Multiply'
-    Then I should see '0'
+    Then I should get '0'
 
   @mult
   Scenario: Multiply one number by a fraction.
     Given I visit the calculator page for multiply
-    And I fill in '2' for 'first'
-    And I fill in '0.5' for 'second'
+    And I fill in '2' for 'm_first'
+    And I fill in '2/1' for 'm_second'
     And I click on 'Multiply'
-    Then I should see 'Please... no fractions'
+    Then I should get '4' 
