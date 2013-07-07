@@ -21,3 +21,7 @@ end
 Then(/^I should find '(\d+\.\d+)'$/) do |answer|
   assert_equal(browser.div(:id => 'd_answer').text, answer)
 end
+
+Then(/^I should find 'Error: you cannot divide by zero'$/) do 
+  assert_equal(browser.div(:id => 'd_answer').text, 'Error: you cannot divide by zero')
+end
