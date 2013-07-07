@@ -18,6 +18,6 @@ Given(/^I click on 'Divide'$/) do
   browser.button(:id => 'divide_button').click
 end
 
-Then(/^I should find '(\d+)'$/) do |answer|
+Then(/^I should find '(\d+\.\d+)'$/) do |answer|
   assert_equal(browser.div(:id => 'd_answer').text, answer)
 end
